@@ -1,25 +1,35 @@
-----------------
-JMSR changelog:
-----------------
-This Mod-Version was tested with **Forge 38.0.17 | 39.1.2 | 40.1.68**
+## ***All the Missing Simple Recipes ChangeLog:***
 
-------------------------------
-**Version 1.xx** | 2022/07/25
-------------------------------
-* First Release Version of the Mod for Forge/Minecraft JE Versions
-	- ~~***1.8.9***~~ | ~~***1.12.2***~~ | ~~***1.15.2***~~ | ***1.16.x*** | ***1.18x*** | ~~***1.19***.x~~
+--------------------------
+ v0.5.3.0.b6 | 2023/03/05?
+--------------------------
+
+
+This Version of the Mod is successfully testet with *[**Forge 38.0.17 | 39.1.2 | 40.1.68**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html)*
+
+The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVlt69/atm-SimpleRecipes/blob/1.18x/CHANGELOG.md)*
+
+______________________
+ *The new Versioning*
+----------------------
+* Available / added for the Minecraft JE Versions
+    - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ***1.15.x*** | ***1.16.x*** | ***1.18x*** | ~~***1.19.1/2***~~ | ~~***1.19.3***~~ | ~~***1.19.4 / 1.20***~~
 
 * Short description of the Version Numbers:
-	- 1st digit = **Major-Version** of the Mod - e.g. ***V 1.***
-	- 2nd digit = will represent the MC-Version
-	  - **V 1.** ***01.*** *xxx* =  MC Version 1.8.xx
-	  - **V 1.** ***02.*** *xxx* =  MC Version 1.12.xx
-	  - **V 1.** ***03.*** *xxx* =  MC Version 1.15.xx
-	  - **V 1.** ***04.*** *xxx* =  MC Version 1.16.xx
-	  - **V 1.** ***05.*** *xxx* =  MC Version 1.18.xx
-	  - **V 1.** ***06.*** *xxx* =  MC Version 1.19...
-	- 3rd digit = **Minor-Version** of the Mod
-	- 4th digit = **Build Number** of the mod of their respective MC-Version
+    - 1st digit = **Major-Version** of the Mod - e.g. ***v0.*** or ***v1.***
+    - 2nd digit = will be a 'Placeholder' for
+        - **v0.** ***01.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.8.x (planned)
+        - **v0.** ***02.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.12.x (work in progress)
+        - **v0.** ***03.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.15.x
+        - **v0.** ***04.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.16.x
+        - **v0.** ***05.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.18x 
+        - **v0.** ***06.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.1/2 
+        - **v0.** ***07.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.3
+        - **v0.** ***08.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.4? / 1.20?
+
+    - 3rd digit = **Minor-Version** of the Mod
+    - 4th digit = **BugFix-Version** of the Mod
+    - 5th digit = **Build Number** of the mod of their respective MC-Version
 
 ----------------------
 V 0.2.3b | 2022/07/21
