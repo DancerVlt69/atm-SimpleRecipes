@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/bamboo_plank_from_bamboo_slabs2"
+    ]
+  },
+  "criteria": {
+    "has_bamboo_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "bambooeverything:bamboo_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/bamboo_plank_from_bamboo_slabs2"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bamboo_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bambooeverything"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "bambooeverything:bamboo_slab"
+    }
+  ]
+}

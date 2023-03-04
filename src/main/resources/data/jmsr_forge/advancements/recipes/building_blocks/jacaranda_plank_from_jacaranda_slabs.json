@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/jacaranda_plank_from_jacaranda_slabs"
+    ]
+  },
+  "criteria": {
+    "has_jacaranda_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:jacaranda_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/jacaranda_plank_from_jacaranda_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_jacaranda_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "biomesoplenty:jacaranda_slab"
+    }
+  ]
+}

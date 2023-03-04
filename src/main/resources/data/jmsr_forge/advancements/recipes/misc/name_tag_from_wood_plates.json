@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:misc/name_tag_from_wood_plates"
+    ]
+  },
+  "criteria": {
+    "has_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "jmsr_forge:cords"
+          },
+          {
+            "tag": "jmsr_forge:wooden_pressure_plates"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:misc/name_tag_from_wood_plates"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients",
+      "has_the_recipe"
+    ]
+  ]
+}

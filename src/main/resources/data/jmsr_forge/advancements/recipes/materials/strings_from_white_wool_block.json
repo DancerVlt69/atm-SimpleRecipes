@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:materials/strings_from_white_wool_block"
+    ]
+  },
+  "criteria": {
+    "has_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:white_wool"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients"
+    ]
+  ]
+}

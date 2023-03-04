@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: Just More Simple Recipes (JMSR) for Forge
+Specification-Vendor: DancerVLT69
+Specification-Version: 0.2.3b
+Implementation-Title: JMSR for Forge
+Implementation-Version: 0.2.3b
+Implementation-Vendor: DancerVLT69
+Implementation-Timestamp: 2021-11-13T17:30:00+0100
+Automatic-Module-Name: JMSR for Forge

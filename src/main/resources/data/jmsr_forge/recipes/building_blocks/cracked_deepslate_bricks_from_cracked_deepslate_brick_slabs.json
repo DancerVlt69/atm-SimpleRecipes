@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "dslabs2blocks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:cracked_deepslate_brick_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:cracked_deepslate_bricks",
+        "count": 2
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "slabsnstairs"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "cracked_deepslate_slab"
+        }
+    ]
+}

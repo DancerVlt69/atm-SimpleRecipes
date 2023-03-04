@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:wooden_slabs"
+  ],
+	"optional": [
+		"#atmospheric:wooden_slabs",
+		"#autumnity:wooden_slabs",
+		"#bamboo_blocks:wooden_slabs",
+		"#bambooeverything:wooden_slabs",
+		"#biomesoplenty:wooden_slabs",
+		"#endergetic:wooden_slabs",
+		"#environmental:wooden_slabs",
+		"#upgrade_aquatic:wooden_slabs"
+    ]
+}

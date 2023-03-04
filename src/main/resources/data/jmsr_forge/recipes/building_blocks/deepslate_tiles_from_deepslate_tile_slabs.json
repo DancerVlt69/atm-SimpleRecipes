@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "dslabs2blocks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:deepslate_tile_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:deepslate_tiles",
+        "count": 2
+    }
+}

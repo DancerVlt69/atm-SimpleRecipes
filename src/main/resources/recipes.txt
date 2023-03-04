@@ -1,0 +1,89 @@
+
+--------------------------------
+ Crafting (2x2) / - Table (3x3)
+--------------------------------
+
+- Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
+
+- Blocks from Slabs (like 'Planks from Slabs') for
+    * Andesite,
+    * Diorite,
+    * Granite,
+    * Nether-Bricks
+
+- Bone Meal from a Nautilus Shell
+
+- Diamond from Coal-Blocks
+
+- Gunpowder from Netherquartz, Charcoal and Glowstone Powder
+
+- Gunpowder from a TNT-Block
+
+- Leather from Armor, Horse Armor, and Saddle - 6 recipes
+
+	* Helmet gives 1 Leather
+	* Chestplate gives 2 Leather
+	* Leggings gives 2 Lether
+	* Boots gives 1 Leaher
+	* Horse Armor gives 2 Leather
+	* Saddle gives 2 Leather
+
+- Name Tags from Strings and Pressure Plates, Wooden Slabs or Wooden Planks
+
+- Magma Cream from Magma Block, plus 0.2 XP
+
+- Oak/Spruce Plank from Chest and Shield
+
+- Paper from Bamboo (Sticks)
+
+- Planks from Wooden Slabs (36 types) | supported Wood types are
+
+	* Minecraft Vanilla
+
+	* Atmospheric
+	* Autumnity
+	* Bamboo Blocks (V 2.1.0)
+	* BambooEverithing
+	* Biomes O' Plenty
+	* Environmental
+	* The Endergetic
+	* Updgrade Aquatic
+
+- Stick from Arrows or Bow - 2 recipes
+
+	* Arrow gives 1 Stick
+	* Bow gives 1 Stick
+
+- Stone-Blocks from Slabs - 2 recipes
+	
+	* Cobblestone
+	* Stone
+
+- Stone- * Axe, * Hoe, * Pickaxe, * Shovel and/or  * Sword from (Clean-) Stone
+
+- Strings from a white Wool Block
+
+----------
+ Campfire
+----------
+
+- Leather from Rotten Flesh
+- Red Dye from Nether Warts
+
+------------------
+ Blasting Furnace
+------------------
+
+- Brick Block from Clay Block (10 sec.), plus 0.35 XP per block
+- Iron Nuggets from (empty) Bucket (9 sec.), plus 0.2 XP per invested Iron Ingot
+- Iron Nuggets from Iron Door(6 sec.), plus 0.2 XP per invested Iron Ingot
+- Magma Cream from Magma Block (9 sec.), plus 0.3 (0.1 per Magma Cream)
+- Red Dye from Nether Warts
+
+
+---------
+ Furnace
+---------
+
+- Leather from Rotten Flesh (9 sec.), plus 0.2 XP
+- Red Dye from Nether Warts

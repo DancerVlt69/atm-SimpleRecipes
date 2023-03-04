@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/weathered_copper_block_from_weathered_copper_slabs"
+    ]
+  },
+  "criteria": {
+    "has_weathered_copper_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "slabsnstairs:weathered_copper_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/weathered_copper_block_from_weathered_copper_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_weathered_copper_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "slabsnstairs"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "slabsnstairs:weathered_copper_slab"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "minecraft:weathered_copper"
+    }
+  ]
+}

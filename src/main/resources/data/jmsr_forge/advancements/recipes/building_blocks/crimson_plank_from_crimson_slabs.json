@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/crimson_plank_from_crimson_slabs"
+    ]
+  },
+  "criteria": {
+    "has_crimson_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:crimson_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/crimson_plank_from_crimson_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crimson_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

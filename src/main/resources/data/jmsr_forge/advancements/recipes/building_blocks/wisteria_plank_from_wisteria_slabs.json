@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/wisteria_plank_from_wisteria_slabs"
+    ]
+  },
+  "criteria": {
+    "has_wisteria_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "environmental:wisteria_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/wisteria_plank_from_wisteria_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wisteria_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "environmental:wisteria_slab"
+    }
+  ]
+}

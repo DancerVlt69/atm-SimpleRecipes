@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "cslabs2blocks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "slabsnstairs:copper_slab"
+        }
+    },
+    "result": {
+        "item": "slabsnstairs:copper_block",
+        "count": 2
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "slabsnstairs"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "minecraft:copper_block"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "slabsnstairs:copper_slab"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/smooth_red_sandstone_block_from_smooth_red_sandstone_slabs"
+    ]
+  },
+  "criteria": {
+    "has_smooth_red_sandstone_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:smooth_red_sandstone_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/smooth_red_sandstone_block_from_smooth_red_sandstone_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_smooth_red_sandstone_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

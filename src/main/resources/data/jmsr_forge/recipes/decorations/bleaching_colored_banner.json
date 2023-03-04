@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bleaching_banner",
+    "pattern": [
+        "H",
+        "W"
+    ],
+    "key": {
+        "H": {
+            "tag": "jmsr_forge:colored_banners"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "minecraft:white_banner",
+        "count": 1
+    }
+}

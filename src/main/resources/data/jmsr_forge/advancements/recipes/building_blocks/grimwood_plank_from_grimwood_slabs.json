@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/grimwood_plank_from_grimwood_slabs"
+    ]
+  },
+  "criteria": {
+    "has_grimwood_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:grimwood_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/grimwood_plank_from_grimwood_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_grimwood_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "atmospheric:grimwood_slab"
+    }
+  ]
+}

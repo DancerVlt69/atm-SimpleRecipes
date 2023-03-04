@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/stone_block_from_stone_slabs"
+    ]
+  },
+  "criteria": {
+    "has_stone_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/stone_block_from_stone_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_stone_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

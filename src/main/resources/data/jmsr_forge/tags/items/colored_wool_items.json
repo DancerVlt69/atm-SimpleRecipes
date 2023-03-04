@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#jmsr_forge:colored_banners",
+	"#jmsr_forge:colored_beds",
+    "#jmsr_forge:colored_carpets",
+    "#jmsr_forge:colored_wool_blocks"
+  ]
+}

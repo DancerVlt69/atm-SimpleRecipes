@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/deepslate_tiles_from_deepslate_tile_slabs"
+    ]
+  },
+  "criteria": {
+    "has_deepslate_tile_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:deepslate_tile_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/deepslate_tiles_from_deepslate_tile_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_tile_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

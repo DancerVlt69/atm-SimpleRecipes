@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/waxed_exposed_copper_block_from_waxed_exposed_copper_slabs"
+    ]
+  },
+  "criteria": {
+    "has_waxed_exposed_copper_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "slabsnstairs:waxed_exposed_copper_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/waxed_exposed_copper_block_from_waxed_exposed_copper_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_waxed_exposed_copper_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "slabsnstairs"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "slabsnstairs:waxed_exposed_copper_slab"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "minecraft:waxed_exposed_copper"
+    }
+  ]
+}

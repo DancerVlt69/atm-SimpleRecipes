@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/granite_block_from_granite_slabs"
+    ]
+  },
+  "criteria": {
+    "has_granite_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:granite_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/granite_block_from_granite_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_granite_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

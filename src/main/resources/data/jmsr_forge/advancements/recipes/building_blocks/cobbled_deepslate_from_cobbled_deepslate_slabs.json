@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/cobbled_deepslate_from_cobbled_deepslate_slabs"
+    ]
+  },
+  "criteria": {
+    "has_cobbled_deepslate_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobbled_deepslate_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/cobbled_deepslate_from_cobbled_deepslate_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cobbled_deepslate_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

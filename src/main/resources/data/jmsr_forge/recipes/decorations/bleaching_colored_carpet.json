@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bleaching_carpet",
+    "pattern": [
+        "_",
+        "W"
+    ],
+    "key": {
+        "_": {
+            "tag": "jmsr_forge:colored_carpets"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "minecraft:white_carpet",
+        "count": 1
+    }
+}

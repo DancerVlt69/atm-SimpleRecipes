@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/cut_copper_block_from_cut_copper_slabs"
+    ]
+  },
+  "criteria": {
+    "has_cut_copper_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cut_copper_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/cut_copper_block_from_cut_copper_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cut_copper_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}
