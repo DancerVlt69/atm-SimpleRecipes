@@ -1,0 +1,35 @@
+
+ext.depends = {
+
+        minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}"
+
+        // JEI - Just Enough Items
+        // compileOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}:api")
+        // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
+        // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
+        // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
+        runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}")
+
+        // Configured & Catalogue
+        runtimeOnly fg.deobf("curse.maven:config-${configuredCF}")
+        runtimeOnly fg.deobf("curse.maven:catalog-${catalogueCF}")
+
+        // Jade (Hwyla Fork)
+        runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
+
+        // ATM - Slabs N Stairs
+        runtimeOnly fg.deobf("curse.maven:atmSnS-${atmSlabsNstairsCF}")
+
+        // Xaero's World & Mini Map
+        runtimeOnly fg.deobf("curse.maven:xaerom-${xaeroMiniVersionCF}")
+        runtimeOnly fg.deobf("curse.maven:xaerow-${xaeroWorldVersionCF}")
+
+        // Cooking 4 Blockheads
+        runtimeOnly fg.deobf("curse.maven:cooking-${ccking4blockhCF}")
+
+        // Croptopia
+        runtimeOnly fg.deobf("curse.maven:cropt-${croptopiaCF}")
+
+        // Stop Mod Reports
+        // embedNoCompile "org.stopmodreposts:stopmodreposts:${minecraftVersion}-${stopmodrepostsVersion}"
+}

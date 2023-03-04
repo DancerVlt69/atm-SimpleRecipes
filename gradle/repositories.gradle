@@ -1,0 +1,18 @@
+
+ext.repos = {
+
+        // location of the maven that hosts JEI files before January 2023
+        maven { name = "Progwm16 JEI maven"; url = "https://dvs1.progwml6.com//files/maven/" }
+        // location of the maven that hosts JEI files since January 2023
+        maven { name = "Jared's maven"; url = "https://maven.blamejared.com/" }
+        // location of a maven mirror for JEI files, as a fallback
+        maven { name = "ModMaven"; url = "https://modmaven.dev" }
+        // Curse Maven
+        maven { name = "Curse Maven"; url = "https://cursemaven.com"; content { includeGroup "curse.maven" } }
+        // Curse Forge
+        maven { name = "CurseForge"; url = "https://minecraft.curseforge.com/api/maven/" }
+
+        //repositories {
+        //   maven { name = "StopModReposts"; url = "https://mvn.stopmodreposts.org/" }
+        //}
+}
