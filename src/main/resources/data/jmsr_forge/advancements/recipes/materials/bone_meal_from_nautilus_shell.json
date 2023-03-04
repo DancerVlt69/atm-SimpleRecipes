@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:materials/bone_meal_from_nautilus_shell"
+    ]
+  },
+  "criteria": {
+    "has_nautilus_shell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:nautilus_shell"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_nautilus_shell"
+    ]
+  ]
+}

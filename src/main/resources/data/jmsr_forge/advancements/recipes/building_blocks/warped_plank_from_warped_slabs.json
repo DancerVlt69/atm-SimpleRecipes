@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/warped_plank_from_warped_slabs"
+    ]
+  },
+  "criteria": {
+    "has_warped_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:warped_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/warped_plank_from_warped_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_warped_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

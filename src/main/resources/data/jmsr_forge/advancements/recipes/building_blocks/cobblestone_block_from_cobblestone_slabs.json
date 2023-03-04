@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/cobblestone_block_from_cobblestone_slabs"
+    ]
+  },
+  "criteria": {
+    "has_cobblestone_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobblestone_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/cobblestone_block_from_cobblestone_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cobblestone_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

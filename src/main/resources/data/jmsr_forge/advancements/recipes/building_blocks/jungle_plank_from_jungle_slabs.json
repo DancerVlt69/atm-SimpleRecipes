@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/jungle_plank_from_jungle_slabs"
+    ]
+  },
+  "criteria": {
+    "has_jungle_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_slab",
+            "count": {
+              "min": 4,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/jungle_plank_from_jungle_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_jungle_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,178 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+
+        maven { url = "https://files.minecraftforge.net/maven" } //maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
+        // maven { url = 'file:/D:Dokumente/'}
+
+        // maven { url = "https://mvn.stopmodreposts.org" }
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
+        // classpath 'net.dancervlt69:optifine:1.+'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'maven-publish'
+
+
+//apply plugin:
+//apply plugin:
+
+// apply plugin: 'eclipse'
+
+// added to read (your) MC-Account data from an external file to save your personal data
+apply from: '/gradle/mcAccount.gradle'
+apply from: '/gradle/updVerNum.gradle'
+
+projectVersion = System.getProperty("projectVer")
+version = "${mcVersionRange}-${projectVersion}"
+group = "${projectGroup}"
+
+java {
+    archivesBaseName = "${projectBaseName}"
+
+    toolchain.languageVersion = JavaLanguageVersion.of(8)
+// sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
+}
+
+repositories {
+    // location of the maven that hosts JEI files before January 2023
+    maven { name = "Progwm16 JEI maven";    url = "https://dvs1.progwml6.com//files/maven/" }
+    // location of the maven that hosts JEI files since January 2023
+    maven { name = "Jared's maven";         url = "https://maven.blamejared.com/" }
+    // location of a maven mirror for JEI files, as a fallback
+    maven { name = "ModMaven";              url = "https://modmaven.dev" }
+    // Curse Maven
+    maven { name = "Curse Maven";           url = "https://cursemaven.com"; content { includeGroup "curse.maven" } }
+    // Curse Forge
+    maven { name = "CurseForge";            url = "https://minecraft.curseforge.com/api/maven/" }
+}
+
+minecraft {
+    // mappings channel: 'official', version: '1.16.5' //'snapshot'
+    mappings channel: 'official', version: "${mcMappingVersion}" // ${mcMappingVersion} //'snapshot'
+    // mappings channel: 'parchment', version: "${parchmentDate}-${parchmentVersion}"   // '2021.08.15-1.17.1'
+
+    runs {
+        client {
+            args '--uuid', System.getProperty("uuID")
+            args '--username', System.getProperty("userName")
+
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                jmsr_forge {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                jmsr_forge {
+                    source sourceSets.main
+                }
+            }
+        }
+
+		data {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            // The markers can be changed as needed.
+            // "SCAN": For mods scan.
+            // "REGISTRIES": For firing of registry events.
+            // "REGISTRYDUMP": For getting the contents of all registries.
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            // You can set various levels here.
+            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
+            property 'forge.logging.console.level', 'debug'
+
+            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
+            args '--mod', 'jmsr_forge', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                jmsr_forge {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${mcMappingVersion}-${forgeVersion}"
+
+    // JEI - Just Enough Items
+    // compileOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}:api")
+    // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
+    // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
+    // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
+    runtimeOnly fg.deobf("mezz.jei:jei-${mcMappingVersion}:${jeiVersion}")
+
+    // Configured & Catalogue
+    runtimeOnly fg.deobf("curse.maven:config-${configuredCF}")
+    runtimeOnly fg.deobf("curse.maven:catalog-${catalogueCF}")
+
+    // Jade (Hwyla Fork)
+    runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
+
+    // ATM - Slabs N Stairs
+    runtimeOnly fg.deobf("curse.maven:atmSnS-${atmSlabsNstairsCF}")
+
+    // Xaero's World & Mini Map
+    runtimeOnly fg.deobf("curse.maven:xaerom-${xaeroMiniVersionCF}")
+    runtimeOnly fg.deobf("curse.maven:xaerow-${xaeroWorldVersionCF}")
+
+    // Cooking 4 Blockheads
+    runtimeOnly fg.deobf("curse.maven:cooking-${ccking4blockhCF}")
+
+    // Croptopia
+    runtimeOnly fg.deobf("curse.maven:cropt-${croptopiaCF}")
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : project.projectName,
+                "Specification-Vendor"    : project.projectOwner,
+                "Specification-Version"   : project.projectVersion,
+                "Implementation-Title"    : project.projectName,
+                "Implementation-Version"  : project.projectVersion,
+                "Implementation-Vendor"   : project.projectOwner,
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+tasks.publish.dependsOn build
+
+task (pub) {
+    apply from: '/gradle/projectPublishing.gradle'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+// task releaseJars(type: Copy) {
+//    from incrementBuildNumber
+//    from jar
+// }

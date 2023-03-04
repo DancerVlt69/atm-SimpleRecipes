@@ -1,0 +1,31 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "bleaching_banner",
+	"pattern": [
+		"U U",
+		"UBU",
+		"UUU"
+	],
+	"key": {
+		"U": {
+			"item": "pamhc2foodcore:freshwateritem"
+		},
+		"B": {
+			"tag": "jmsr_forge:colored_banners"
+		}
+	},
+	"result": {
+		"item": "minecraft:white_banner",
+		"count": 1
+	},
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "pamhc2foodcore"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "pamhc2foodcore:freshwateritem"
+		}
+	]
+}

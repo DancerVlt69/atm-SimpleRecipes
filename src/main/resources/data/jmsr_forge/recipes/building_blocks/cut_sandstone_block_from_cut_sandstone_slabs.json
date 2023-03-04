@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "slabs2blocks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:cut_sandstone_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:cut_sandstone",
+        "count": 2
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "minecraft:clay"
+    },
+    "result": "minecraft:bricks",
+    "experience": 0.35,
+    "cookingtime": 200
+}

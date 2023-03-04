@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:wooden_pressure_plates"
+  ],
+	"optional": [
+		"#atmospheric:wooden_pressure_plates",
+		"#autumnity:wooden_pressure_plates",
+		"#bamboo_blocks:wooden_pressure_plates",
+		"#bambooeverything:wooden_pressure_plates",
+		"#biomesoplenty:wooden_pressure_plates",
+		"#endergetic:wooden_pressure_plates",
+		"#environmental:wooden_pressure_plates",
+		"#upgrade_aquatic:wooden_pressure_plates"
+    ]
+}

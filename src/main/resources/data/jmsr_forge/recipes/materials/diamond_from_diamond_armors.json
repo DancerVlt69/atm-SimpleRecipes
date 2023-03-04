@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:blasting",
+	"group": "getDiamonds",
+	"ingredient": {
+		"tag": "jmsr_forge:diamond_armors"
+	},
+	"result": "minecraft:diamond",
+	"experience": 0.5,
+	"cookingtime": 100
+}

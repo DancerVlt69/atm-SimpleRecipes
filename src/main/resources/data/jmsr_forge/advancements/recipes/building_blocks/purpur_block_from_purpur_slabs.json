@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/purpur_block_from_purpur_slabs"
+    ]
+  },
+  "criteria": {
+    "has_purpur_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:purpur_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/purpur_block_from_purpur_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_purpur_slabs",
+      "has_the_recipe"
+    ]
+  ]
+}

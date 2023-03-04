@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:materials/diamond_from_diamond_tools"
+    ]
+  },
+  "criteria": {
+    "has_diamond_tools": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+		  "items": [
+		  {
+			  "tag": "jmsr_forge:diamond_tools"
+		  }	
+		]
+	  }
+	}
+  },
+  "requirements": [
+    [
+      "has_diamond_tools"
+    ]
+  ]
+}

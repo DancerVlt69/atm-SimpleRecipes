@@ -1,0 +1,37 @@
+/** Colored Console logs in Groovy
+* Credits
+* Author: Nishant Srivastava
+* Web: https://crushingcode.nisrulz.com/posts/rainbow-console-logs-in-groovy/
+* GitHub: https://github.com/nisrulz/android-examples/tree/develop/ColoredConsoleLogs
+*/
+
+def printlnWithColor(color, str) {
+    // Map of ANSI Escape color codes
+    final colorsMap = [black  : 30, red: 31, green: 32, yellow: 33,
+                       blue   : 34, magenta: 35, cyan: 36, white: 37,
+                       default: 39]
+    // Create the escape sequence so string is color formatted
+    final style = "${(char) 27}[${colorsMap[color]}" + "m"
+    // Apply the escape sequence to the string by prepending it
+    final styledStr = style + str
+    // finally use println to print this escaped string
+    println(styledStr)
+}
+
+// Using ext.method_name so it is exported and available
+// to be used outside the file it is declared in
+ext.printlnBlack = { str -> printlnWithColor("black", str) }
+
+ext.printlnRed = { str -> printlnWithColor("red", str) }
+
+ext.printlnGreen = { str -> printlnWithColor("green", str) }
+
+ext.printlnYellow = { str -> printlnWithColor("yellow", str) }
+
+ext.printlnBlue = { str -> printlnWithColor("blue", str) }
+
+ext.printlnCyan = { str -> printlnWithColor("magenta", str) }
+
+ext.printlnWhite = { str -> printlnWithColor("white", str) }
+
+ext.printlnDefault = { str -> printlnWithColor("default", str) }
