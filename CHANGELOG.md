@@ -1,5 +1,5 @@
-***All the Missing Simple Recipes ChangeLog:***
-------------------------------------------------
+## ***All the Missing Simple Recipes ChangeLog:***
+
 ----------------------------
  v0.3.0.11.b26 | 2023/03/05
 ----------------------------
@@ -26,7 +26,7 @@
 
 This Version of the Mod is successfully testet with *[**Forge 31.2.57 | 30.0.51**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.15.2.html)*
 
-The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVlt69/AllTheMissingRecipes/blob/1.15.2/CHANGELOG.md)*
+The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVlt69/atm-SimpleRecipes/blob/1.15.x/CHANGELOG.md)*
 
 ---------------------------
  v0.3.0.2.b10 | 2023/01/16
@@ -56,7 +56,7 @@ ____________________
 * Short description of the Version Numbers:
 	- 1st digit = **Major-Version** of the Mod - e.g. ***v0.*** or ***v1.***
 	- 2nd digit = will be a 'Placeholder' for
-	  - **v0.** ***01.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.8.x (planed)
+	  - **v0.** ***01.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.8.x (planned)
 	  - **v0.** ***02.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.12.x (work in progress)
 	  - **v0.** ***03.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.15.x
 	  - **v0.** ***04.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.16.x
