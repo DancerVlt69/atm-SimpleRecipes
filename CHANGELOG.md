@@ -1,5 +1,5 @@
-##*** All the Missing Simple Recipes ChangeLog: ***
--------------------------------------------------
+# ***All the Missing Simple Recipes ChangeLog:***
+
 --------------------------
  v0.3.0.1b52 | 2023/08/05
 --------------------------
@@ -13,7 +13,7 @@ This Version of the Mod is successfully testet with
 The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVlt69/AllTheMissingRecipes/blob/1.16.x/CHANGELOG.md)*
 
 ____________________
-The new Versioning
+ The new Versioning
 --------------------
 * Available / added for the Minecraft JE Versions
     - ~~***1.8.9***~~ | ~~***1.12.2***~~ | ***1.15.x*** | ***1.16.x*** | ~~***1.18x***~~ | ~~***1.19.1/2***~~ | ~~***1.19.3***~~ | ~~***1.19.4/1.20***~~ |

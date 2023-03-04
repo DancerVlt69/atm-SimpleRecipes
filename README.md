@@ -1,4 +1,7 @@
-# Just More Simple Recipes
+# ***ATM - Simple Recipes (former JMSR)***
+___
 
-Just More Simple Recipes (JMSR) will add some useful new recipes
-to your Minecraft 1.16.5 Java Edition.
+**All the Missing (ATM) Simple Recipes** will add some useful new recipes
+to your Minecraft Java Edition.
+
+Detailed infos about the history/Changelog you can find in the [*ChangeLog*](CHANGELOG.md)
