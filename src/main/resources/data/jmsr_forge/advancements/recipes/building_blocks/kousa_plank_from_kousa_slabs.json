@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/kousa_plank_from_kousa_slabs"
+    ]
+  },
+  "criteria": {
+    "has_kousa_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:kousa_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/kousa_plank_from_kousa_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_kousa_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "atmospheric:kousa_slab"
+    }
+  ]
+}

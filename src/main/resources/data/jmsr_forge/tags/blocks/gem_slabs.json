@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:quartz_slab",
+
+    "minecraft:purpur_slab",
+    "minecraft:prismarine_slab",
+    "minecraft:prismarine_brick_slab",
+    "minecraft:dark_prismarine_slab",
+    "minecraft:smooth_quartz_slab"
+  ],
+  "optional": [
+    "upgrade_aquatic:tooth_slab",
+    "upgrade_aquatic:tooth_brick_slab",
+    "savageandravage:blast_proof_slab"
+  ]
+}

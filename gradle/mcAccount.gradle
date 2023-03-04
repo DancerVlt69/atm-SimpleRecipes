@@ -1,0 +1,61 @@
+// This file will initialize the Minecraft User Account Data
+//
+// Important hint:
+// !!! Normally you do NOT share the (*.env) Files that contains     !!!
+// !!! your personal data! Only for an example I do this, so you can !!!
+// !!! explain a little bit, how you can hide critical personal date !!!
+
+gradle.allprojects {
+    apply from: '/gradle/coloredConsole.gradle'
+    // define variables - at the first time empty
+    def uuid = ""
+    def user = ""
+
+    // define helping file and string variables
+    def buildPropFile = file('/.env/mcAccountData.env')
+    def debugString = "> [" + project.archivesBaseName + " - DEBUG:] "
+
+    // start main task
+    task setMCAccountData {
+
+        // only a small debug info in the console/log file
+        println debugString + "Initializing Minecraft Account Data..."
+
+        // init a new property instance
+        Properties buildProps = new Properties()
+        // open a reading channel to the defined file
+        buildProps.load(buildPropFile.newDataInputStream())
+
+        // reading the values and 'fill' the variables
+        uuid = buildProps.getProperty("UUID")
+        user = buildProps.getProperty("USER")
+
+        // define the (filled) variables as System Property Variables
+        // so that the System can use them in (all) other Gradle tasks
+
+        // printlnBlue (debugString + uuid + " | " + user + "\n") // only for debug
+
+        System.setProperty("uuID", uuid)
+        System.setProperty("userName", user)
+
+        if ((uuid == null || uuid != 36) && (user == null || user.length() <= 0)) {
+            printlnRed (debugString + "Minecraft Account Initialization failed...")
+            printlnRed (debugString + "because UUID is null or empty or has the wrong length!")
+            printlnRed (debugString + "and Username is null or empty!")
+            // printlnBlue ("") // (debugString + uuid + " | " + user + "\n") // only for debug
+        } else if (uuid == null || uuid == "" || uuid.length() != 36) {
+            printlnRed (debugString + "Minecraft Account Initialization failed...")
+            printlnRed (debugString + "because UUID is null or empty or has the wrong length!")
+            // printlnBlue ("") // (debugString + uuid + " | " + user + "\n") // only for debug
+        } else if (user == null || user.length() <= 0) {
+            printlnRed (debugString + "Minecraft Account Initialization failed...")
+            printlnRed (debugString + "because Username is null or empty!")
+            // printlnBlue ("") // (debugString + uuid + " | " + user + "\n") // only for debug
+        }  else {
+            printlnGreen (debugString + "Minecraft Account Initialization successfully finished.")
+            // printlnBlue ("") // (debugString + uuid + " | " + user + "\n") // only for debug
+        }
+    }
+    printlnDefault ("") // (uuid.length()) // only for debug
+
+}

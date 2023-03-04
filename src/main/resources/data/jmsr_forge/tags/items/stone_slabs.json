@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone_slab",
+    "minecraft:smooth_stone_slab",
+    "minecraft:sandstone_slab",
+    "minecraft:cut_sandstone_slab",
+    "minecraft:cobblestone_slab",
+    "minecraft:brick_slab",
+    "minecraft:stone_brick_slab",
+    "minecraft:nether_brick_slab",
+    "minecraft:red_sandstone_slab",
+    "minecraft:cut_red_sandstone_slab",
+    "minecraft:polished_granite_slab",
+    "minecraft:smooth_red_sandstone_slab",
+    "minecraft:mossy_stone_brick_slab",
+    "minecraft:mossy_stone_brick_slab",
+    "minecraft:polished_diorite_slab",
+    "minecraft:mossy_cobblestone_slab",
+    "minecraft:end_stone_brick_slab",
+    "minecraft:smooth_sandstone_slab",
+    "minecraft:granite_slab",
+    "minecraft:andesite_slab",
+    "minecraft:red_nether_brick_slab",
+    "minecraft:polished_andesite_slab",
+    "minecraft:diorite_slab"
+
+  ],
+  "optional": [
+    "savageandravage:gloomy_tile_slab"
+  ]
+}

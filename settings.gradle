@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+
+        maven { name = 'Forge'; url = 'https://maven.minecraftforge.net/'}
+        maven { name = 'Curse Forge'; url = "https://cursemaven.com"}
+        // maven { url = "https://mvn.stopmodreposts.org" }
+
+    }
+}
+
+rootProject.name = "ATM-SimpleRecipes-1.15.x"
+// include('Common', 'Forge', 'Fabric')

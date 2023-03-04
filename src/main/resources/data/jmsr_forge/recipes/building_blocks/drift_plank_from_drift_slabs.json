@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "slabs2planks",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "upgrade_aquatic:driftwood_slab"
+        }
+    },
+    "result": {
+        "item": "upgrade_aquatic:driftwood_planks",
+        "count": 2
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "upgrade_aquatic"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "upgrade_aquatic:driftwood_planks"
+        }
+    ]
+}

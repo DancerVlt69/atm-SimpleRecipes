@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#jmsr_forge:gem_slabs",
+    "#jmsr_forge:stone_slabs",
+    "#jmsr_forge:wooden_slabs"
+  ]
+}

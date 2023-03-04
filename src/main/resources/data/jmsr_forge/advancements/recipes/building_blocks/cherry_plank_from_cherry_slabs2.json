@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/cherry_plank_from_cherry_slabs2"
+    ]
+  },
+  "criteria": {
+    "has_cherry_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "environmental:cherry_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/cherry_plank_from_cherry_slabs2"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cherry_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "environmental:cherry_slab"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:campfire_cooking",
+	"group": "red_dye",
+	"ingredient": {
+		"item": "minecraft:nether_wart"
+	},
+	"result": "minecraft:red_dye",
+	"experience": 1.0,
+	"cookingtime": 500
+}

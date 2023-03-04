@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+		"#minecraft:planks"
+  ],
+	"optional": [
+		"#atmospheric:planks",
+		"#autumniy:planks",
+		"#bamboo_blocks:planks",
+		"#bambooeverything:planks",
+		"#biomesopelty:planks",
+		"#endergetic:planks",
+		"#environmental:planks",
+		"#upgrade_aquatic:planks"
+  ]
+}

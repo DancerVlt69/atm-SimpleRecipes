@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:decorations/bleaching_colored_bed_with_fresh_water"
+    ]
+  },
+  "criteria": {
+    "has_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "jmsr_forge:colored_beds"
+          },
+          {
+            "item": "pamhc2foodcore:freshwateritem"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:decorations/bleaching_colored_bed_with_fresh_water"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pamhc2foodcore"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "pamhc2foodcore:freshwateritem"
+    }
+  ]
+}

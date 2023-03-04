@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/oak_plank_from_chest"
+    ]
+  },
+  "criteria": {
+    "has_chest": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chest"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/oak_plank_from_chest"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_chest",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "name_tags",
+  "pattern": [
+    "S  ",
+    "S##",
+    "S  "
+  ],
+  "key": {
+    "#": {
+      "tag": "jmsr_forge:planks"
+    },
+    "S":{
+      "tag": "jmsr_forge:cords"
+    }
+  },
+  "result": {
+    "item": "minecraft:name_tag",
+    "count": 3
+    }
+}

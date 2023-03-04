@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+  "group": "slabs2blocks",
+  "pattern": [
+    "__",
+    "__"
+  ],
+  "key": {
+    "_": {
+      "item": "atmospheric:peach_travertine_slab"
+    }
+  },
+  "result": {
+    "item": "atmospheric:cut_peach_travertine",
+    "count": 2
+  },
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "atmospheric"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "atmospheric:peach_travertine_slab"
+		}
+	]
+}

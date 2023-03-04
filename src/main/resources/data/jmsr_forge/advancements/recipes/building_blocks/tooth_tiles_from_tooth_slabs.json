@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/tooth_tiles_from_tooth_slabs"
+    ]
+  },
+  "criteria": {
+    "has_tooth_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "upgrade_aquatic:tooth_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/tooth_tiles_from_tooth_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tooth_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "upgrade_aquatic:tooth_slab"
+    }
+  ]
+}

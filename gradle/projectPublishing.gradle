@@ -1,0 +1,38 @@
+gradle.allprojects {
+    def dbgString = "> [" + projectName + " - DEBUG:] "
+//    def buildPropFile = file('/.env/dev.env')
+
+//    Properties debugger = new Properties()
+//    debugger.load(buildPropFile.newDataInputStream())
+//    debugger.getProperty('DGBSTRING')
+//    def dgbString = debugger.getProperty('DGBSTRING').
+//    println(dgbString)
+
+    if (System.getenv('TASK') == 'publish') {
+        if (System.getenv('TYPE') == 'maven') {
+            println(dbgString + "Maven-Publishing started...")
+            publishing {
+                publications {
+                    customLibrary(MavenPublication) {
+                        groupId = group
+                        artifactId = projectId
+                        version = version
+
+                        from components.java
+                    }
+                }
+                repositories {
+                    maven {
+                        name = "${projectId}"
+                        url = layout.buildDirectory.dir("publish/maven")
+                    }
+                }
+            }
+        } else {
+            println(dbgString + "CurseForge-Publishing started...")
+            // apply from: '/gradle/discordPost.gradle'
+        }
+    }
+}
+
+

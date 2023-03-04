@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+	  "minecraft:diamond_shovel",
+	  "minecraft:diamond_hoe",
+	  "minecraft:diamond_axe",
+	  "minecraft:diamond_pickaxe",
+	  "minecraft:diamond_sword"
+  ],
+	"optional": [
+		"farmersdelight:diamond_knife"
+  ]
+}

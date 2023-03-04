@@ -1,0 +1,47 @@
+{
+	"parent": "minecraft:recipes/root",
+	"display": {
+		"hidden": true
+	},
+	"rewards": {
+    "recipes": [
+      "jmsr_forge:misc/shulker_box_from_obsidian"
+    ]
+  },
+  "criteria": {
+    "has_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:obsidian"
+          },
+          {
+            "item": "minecraft:crying_obsidian"
+          },
+          {
+            "item": "minecraft:chest"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:misc/shulker_box_from_obsidian"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "minecraft:crying_obsidian"
+    }
+  ]
+}

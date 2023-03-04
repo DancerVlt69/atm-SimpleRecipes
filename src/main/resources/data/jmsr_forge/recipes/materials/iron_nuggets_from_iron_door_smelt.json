@@ -1,0 +1,13 @@
+{	
+	"type": "minecraft:smelting",
+	"group": "getIronNuggets",
+    "ingredient": {
+        "item": "minecraft:iron_door"
+    },
+	"result": {
+		"item": "minecraft:iron_nugget",
+		"count": 2
+		},
+	"experience": 0.4,
+	"cookingtime": 120
+}

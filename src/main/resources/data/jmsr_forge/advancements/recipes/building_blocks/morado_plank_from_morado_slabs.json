@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/morado_plank_from_morado_slabs"
+    ]
+  },
+  "criteria": {
+    "has_morado_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:morado_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/morado_plank_from_morado_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_morado_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "atmospheric:morado_slab"
+    }
+  ]
+}

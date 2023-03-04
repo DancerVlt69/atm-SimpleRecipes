@@ -1,0 +1,133 @@
+// apply from: "/.env/coloredConsole.gradle"
+
+apply from: '/gradle/coloredConsole.gradle'
+
+gradle.allprojects {
+    def mjrVer = ""
+    def minVer = ""
+    def subVer = ""
+    def fixVer = ""
+    def buildNum = ""
+    def runNum = ""
+
+    def dbgString = "> [" + project.archivesBaseName + " - DEBUG:] "
+    def buildPropFile = file('/.env/dev.env')
+
+    Properties buildProps = new Properties()
+    buildProps.load(buildPropFile.newDataInputStream())
+
+    if (!buildPropFile.canRead()) {
+        throw new FileNotFoundException("Can not read the env property file!")
+    } else {
+        task incrementVerBuildNum {
+
+            def hash = buildPropFile.hashCode().toString()
+
+            println dbgString + "Validating Version..."
+            printlnBlue dbgString + hash
+            printlnDefault ""
+
+            mjrVer = buildProps.getProperty("MAJORVERSION")
+            subVer = buildProps.getProperty("SUBVERSION")
+            minVer = buildProps.getProperty("MINORVERSION")
+            fixVer = buildProps.getProperty("FIXVERSION")
+            buildNum = buildProps.getProperty("BUILDNUMBER")
+            runNum = buildProps.getProperty("RNUMBER")
+
+            Integer newRNumber = (buildProps.getProperty('RNUMBER') as BigInteger) + 1
+            buildProps.setProperty('RNUMBER', newRNumber.toString())
+
+            def gTask = System.getenv("TASK")
+            def gType = System.getenv("TYPE")
+
+            if (!buildPropFile.canRead()) {
+                throw new FileNotFoundException("Can not read/write the env property file!")
+            }
+
+            if (gTask != "create") {
+                if (gTask == 'runClient') {
+                    println dbgString + "starting Client"
+                } else if (gTask == 'runServer') {
+                    println dbgString + "starting Server"
+                } else println dbgString + "rebuild Project"
+
+            } else {
+
+                if (gType == 'test') {
+                    Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger) + 1
+                    buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+                    println dbgString + "newBuildNumber is set to ${newBuildNumber}.\n"
+                } else if (gType == "fix") {
+                    Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger) + 1
+                    Integer newFixVersion = (buildProps.getProperty('FIXVERSION') as BigInteger) + 1
+                    buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+                    buildProps.setProperty('FIXVERSION', newFixVersion.toString())
+
+                    println dbgString + "newFixVersion is (set to) ${newFixVersion}."
+                    println dbgString + "newBuildNumber is (set to) ${newBuildNumber}.\n"
+                } else if (gType == "minor") {
+                    Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger) + 1
+                    Integer newFixVersion = 0
+                    Integer newMinorVersion = (buildProps.getProperty('MINORVERSION') as BigInteger) + 1
+
+                    buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+                    buildProps.setProperty('FIXVERSION', newFixVersion.toString())
+                    buildProps.setProperty('MINORVERSION', newMinorVersion.toString())
+
+                    println dbgString + "newBuildNumber is (set to) ${newMinorVersion}."
+                    println dbgString + "newFixVersion is (set to) ${newFixVersion}."
+                    println dbgString + "newBuildNumber is (set to) ${newBuildNumber}.\n"
+
+                } else if (gType == "main") {
+                    Integer newBuildNumber = (buildProps.getProperty('BUILDNUMBER') as BigInteger) + 1
+                    Integer newFixVersion = 0
+                    Integer newMinorVersion = 0
+                    Integer newMajorVersion = (buildProps.getProperty('MAJORVERSION') as BigInteger) + 1
+
+                    buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+                    buildProps.setProperty('FIXVERSION', newFixVersion.toString())
+                    buildProps.setProperty('MINORVERSION', newMinorVersion.toString())
+                    buildProps.setProperty('MAJORVERSION', newMajorVersion.toString())
+
+                    println dbgString + "new MajorVersion is (set to) ${newMajorVersion}."
+                    println dbgString + "new MinorVerion is (set to) ${newMinorVersion}."
+                    println dbgString + "new FixVersion is (set to) ${newFixVersion}."
+                    println dbgString + "new BuildNumber is (set to) ${newBuildNumber}.\n"
+
+                } else if (gType == "reset") {
+                    Integer newBuildNumber = 0
+                    Integer newFixVersion = 0
+                    Integer newMinorVersion = 0
+                    Integer newMajorVersion = 0
+
+                    buildProps.setProperty('BUILDNUMBER', newBuildNumber.toString())
+                    buildProps.setProperty('FIXVERSION', newFixVersion.toString())
+                    buildProps.setProperty('MINORVERSION', newMinorVersion.toString())
+                    buildProps.setProperty('MAJORVERSION', newMajorVersion.toString())
+
+                    println dbgString + "new MajorVersion is (set to) ${newMajorVersion}."
+                    println dbgString + "new MinorVerion is (set to) ${newMinorVersion}."
+                    println dbgString + "new FixVersion is (set to) ${newFixVersion}."
+                    println dbgString + "new BuildNumber is (set to) ${newBuildNumber}.\n"
+                }
+            }
+        }
+
+        buildProps.store(buildPropFile.newWriter(), null)
+        buildProps.load(buildPropFile.newDataInputStream())
+
+        mjrVer = buildProps.getProperty("MAJORVERSION")
+        subVer = buildProps.getProperty("SUBVERSION")
+        minVer = buildProps.getProperty("MINORVERSION")
+        fixVer = buildProps.getProperty("FIXVERSION")
+        buildNum = buildProps.getProperty("BUILDNUMBER")
+        runNum = buildProps.getProperty("RNUMBER")
+
+        def newProjectVersion = mjrVer + "." + subVer + "." + minVer + "." + fixVer + ".b" + buildNum
+        System.setProperty("projectVer", (newProjectVersion as String))
+
+        println dbgString + "Run-Count: " + runNum
+        println dbgString + "Project-Version is (set to) " + newProjectVersion
+        println ("")
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "__",
+        "__"
+    ],
+    "key": {
+        "_": {
+            "item": "upgrade_aquatic:beachgrass_thatch_slab"
+        }
+    },
+    "result": {
+        "item": "upgrade_aquatic:beachgrass_thatch",
+        "count": 2
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "upgrade_aquatic"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "upgrade_aquatic:beachgrass_thatch"
+        }
+    ]
+}

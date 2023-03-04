@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+	"group": "slabs2planks",
+  "pattern": [
+    "__",
+    "__"
+  ],
+  "key": {
+    "_": {
+      "item": "bamboo_blocks:bamboo_slab"
+    }
+  },
+  "result": {
+    "item": "bamboo_blocks:bamboo_planks",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bamboo_blocks"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "bamboo_blocks:bamboo_slab"
+    }
+  ]
+}

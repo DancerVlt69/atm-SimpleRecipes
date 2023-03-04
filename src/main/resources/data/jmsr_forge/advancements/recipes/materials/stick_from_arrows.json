@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "group": "getSticks",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:materials/stick_from_arrows"
+    ]
+  },
+  "criteria": {
+    "has_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:arrows"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:materials/stick_from_arrows"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ingredients",
+      "has_the_recipe"
+    ]
+  ]
+}

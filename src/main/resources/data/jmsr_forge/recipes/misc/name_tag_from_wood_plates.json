@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "name_tags",
+  "pattern": [
+    " ##",
+    "S  "
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:wooden_pressure_plates"
+    },
+    "S": [
+      {
+        "item": "minecraft:string"
+      },
+      {
+        "item": "minecraft:lead"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:name_tag",
+    "count": 1
+  }
+}

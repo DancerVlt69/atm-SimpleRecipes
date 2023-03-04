@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+	"group": "get_sticks",
+  "ingredients": [
+    {
+    "tag": "minecraft:arrows"
+    }
+  ],
+  "result": {
+  "item": "minecraft:stick",
+  "count": 1
+  }
+}
