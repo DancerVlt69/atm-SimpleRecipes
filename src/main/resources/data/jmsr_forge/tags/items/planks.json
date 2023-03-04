@@ -11,6 +11,7 @@
 	  "#biomesopelty:planks",
 	  "#endergetic:planks",
 	  "#environmental:planks",
-	  "#upgrade_aquatic:planks"
+	  "#upgrade_aquatic:planks",
+	  "#slabsnstairs:planks"
   ]
 }

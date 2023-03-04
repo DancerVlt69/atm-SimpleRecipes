@@ -11,6 +11,7 @@
 		"#biomesoplenty:wooden_slabs",
 		"#endergetic:wooden_slabs",
 		"#environmental:wooden_slabs",
-		"#upgrade_aquatic:wooden_slabs"
+		"#upgrade_aquatic:wooden_slabs",
+		"#slabsnstairs:wooden_slabs"
     ]
 }

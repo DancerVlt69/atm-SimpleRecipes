@@ -2,22 +2,22 @@
   "replace": false,
   "values": [
     "minecraft:wooden_sword",
-	"minecraft:stone_sword",
-	"minecraft:golden_sword",
-	"minecraft:iron_sword",
-	"minecraft:diamond_sword",
-	"minecraft:netherite_sword"
+		"minecraft:stone_sword",
+		"minecraft:golden_sword",
+		"minecraft:iron_sword",
+		"minecraft:diamond_sword",
+		"minecraft:netherite_sword"
   ],
 	"optional": [
-	"appliedenergistics2:certus_quartz_sword",
-	"appliedenergistics2:nether_quartz_sword",
-	"appliedenergistics2:certus_quartz_cutting_knife",
-	"appliedenergistics2:nether_quartz_cutting_knife",
-	"farmersdelight:flint_knife",
-	"farmersdelight:golden_knife",
-	"farmersdelight:iron_knife",
-	"farmersdelight:diamond_knife",
-	"farmersdelight:netherite_knife",
-	"savageandravage:cleaver_of_beheading"
+		"appliedenergistics2:certus_quartz_sword",
+		"appliedenergistics2:nether_quartz_sword",
+		"appliedenergistics2:certus_quartz_cutting_knife",
+		"appliedenergistics2:nether_quartz_cutting_knife",
+		"farmersdelight:flint_knife",
+		"farmersdelight:golden_knife",
+		"farmersdelight:iron_knife",
+		"farmersdelight:diamond_knife",
+		"farmersdelight:netherite_knife",
+		"savageandravage:cleaver_of_beheading"
   ]
 }
