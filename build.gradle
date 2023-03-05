@@ -7,7 +7,7 @@ buildscript {
 //
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
 
@@ -21,6 +21,8 @@ apply plugin: 'maven-publish'
 // added to read (your) MC-Account data from an external file to save your personal data
 apply from: '/gradle/mcAccount.gradle'
 apply from: '/gradle/updVerNum.gradle'
+apply from: '/gradle/repositories.gradle' // repositories moved to external file
+apply from: '/gradle/dependencies.gradle' // dependencies moved to external file
 
 projectVersion = System.getProperty("projectVer")
 version = "${mcVersionRange}-${projectVersion}"
@@ -29,18 +31,7 @@ group = "${projectGroup}"
 archivesBaseName = "${projectBaseName}"
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
 
-repositories {
-    // location of the maven that hosts JEI files before January 2023
-    maven { name = "Progwm16 JEI maven";    url = "https://dvs1.progwml6.com//files/maven/" }
-    // location of the maven that hosts JEI files since January 2023
-    maven { name = "Jared's maven";         url = "https://maven.blamejared.com/" }
-    // location of a maven mirror for JEI files, as a fallback
-    maven { name = "ModMaven";              url = "https://modmaven.dev" }
-    // Curse Maven
-    maven { name = "Curse Maven";           url = "https://cursemaven.com" } // ; content { includeGroup "curse.maven" } }
-    // Curse Forge
-    maven { name = "CurseForge";            url = "https://minecraft.curseforge.com/api/maven/" }
-}
+repositories repos
 
 minecraft {
     // mappings channel: 'snapshot', version: '20200514-1.15.1'
@@ -103,35 +94,7 @@ minecraft {
     }
 }
 
-dependencies {
-    minecraft "net.minecraftforge:forge:1.15.2-31.2.57" // ${minecraftVersion}-${forgeVersion}"
-
-    // JEI - Just Enough Items
-    // compileOnly fg.deobf("mezz.jei:jei-${minecraftVersion}:${jeiVersion}:api")
-    // runtimeOnly fg.deobf("curse.maven:jei-238222:3874762")
-    // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
-    // runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.15.2:${jeiVersion}")
-    // runtimeOnly fg.deobf("curse.maven:jei-${jeiVersionCF}")
-
-    // Jade (Hwyla Fork)
-    // runtimeOnly fg.deobf("curse.maven:jade-${jadeVersionCF}")
-
-    // Hwyla
-    // compileOnly fg.deobf("curse.maven:hwyla-${hwylaApiVersionCF}")
-    // runtimeOnly fg.deobf("curse.maven:hwyla-${hwylaVersionCF}")
-    // compileOnly fg.deobf("mcp.mobius.waila:Hwyla:1.10.8-B72:api")
-    // runtimeOnly fg.deobf("mcp.mobius.waila:Hwyla:1.10.8-B72")
-
-    // Xaero's World & Mini Map
-    // runtimeOnly fg.deobf("curse.maven:xaerom-${xaeroMiniVersionCF}")
-    // runtimeOnly fg.deobf("curse.maven:xaerow-${xaeroWorldVersionCF}")
-
-    // Journey Map
-    // runtimeOnly fg.deobf("curse.maven:journey-${journeyVersionCF}")
-
-    // implementation( gradleApi() )
-}
+dependencies depends
 
 jar {
     manifest {
