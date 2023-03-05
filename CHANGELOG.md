@@ -1,7 +1,7 @@
 # ***All the Missing Simple Recipes ChangeLog:***
 
 --------------------------
- v0.3.0.1b52 | 2023/08/05
+ v0.3.0.1b52 | 2023/08/10
 --------------------------
 * ***added:***
   * Slabs 'n Stairs Support:
