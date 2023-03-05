@@ -3,8 +3,8 @@ buildscript {
         maven { url = "https://files.minecraftforge.net/maven" } //maven { url = 'https://maven.minecraftforge.net' }
 //        maven { url = "https://cursemaven.com"}
 //        maven { url = "https://maven.tehnut.info" }
-//        // maven { url = "https://minecraft.curseforge.com/api/maven" }
-//
+//        maven { url = "https://minecraft.curseforge.com/api/maven" }
+
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
@@ -16,7 +16,6 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
 // apply plugin: 'eclipse'
-
 
 // added to read (your) MC-Account data from an external file to save your personal data
 apply from: '/gradle/mcAccount.gradle'
