@@ -55,7 +55,13 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/diamond_from_diamond_armors"
+		  }
+	  }
   },
   "requirements": [
     [
@@ -63,7 +69,8 @@
       "has_diamond_chestplate",
       "has_diamond_leggings",
       "has_diamond_boots",
-      "has_diamond_horse_armor"
+      "has_diamond_horse_armor",
+	    "has_the_recipe"
     ]
   ]
 }

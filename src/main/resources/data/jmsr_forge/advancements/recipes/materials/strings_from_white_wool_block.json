@@ -15,11 +15,18 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/strings_from_white_wool_block"
+		  }
+	  }
   },
   "requirements": [
     [
-      "has_ingredients"
+      "has_ingredients",
+	    "has_the_recipe"
     ]
   ]
 }

@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "jmsr_forge:red_dye_from_nether_wart_blast"
+      "jmsr_forge:materials/red_dye_from_nether_wart_blast"
     ]
   },
   "criteria": {
@@ -15,11 +15,18 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/red_dye_from_nether_wart_blast"
+		  }
+	  }
   },
   "requirements": [
     [
-      "has_nether_wart"
+      "has_nether_wart",
+	    "has_the_recipe"
     ]
   ]
 }

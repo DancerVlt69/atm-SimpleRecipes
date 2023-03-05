@@ -16,11 +16,18 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/stick_from_bow"
+		  }
+	  }
   },
   "requirements": [
     [
-      "has_ingredients"
+      "has_ingredients",
+	    "has_the_recipe"
     ]
   ]
 }

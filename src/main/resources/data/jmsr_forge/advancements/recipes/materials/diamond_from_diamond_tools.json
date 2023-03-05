@@ -9,17 +9,24 @@
     "has_diamond_tools": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-		  "items": [
-		  {
-			  "tag": "jmsr_forge:diamond_tools"
-		  }	
-		]
+			  "items": [
+				  {
+					  "tag": "jmsr_forge:diamond_tools"
+				  }
+				]
+		  }
+		},
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/diamond_from_diamond_tools"
+		  }
 	  }
-	}
   },
   "requirements": [
     [
-      "has_diamond_tools"
+      "has_diamond_tools",
+	    "has_the_recipe"
     ]
   ]
 }

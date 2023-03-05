@@ -15,11 +15,18 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/bone_meal_from_nautilus_shell"
+		  }
+	  }
   },
   "requirements": [
     [
-      "has_nautilus_shell"
+      "has_nautilus_shell",
+	    "has_the_recipe"
     ]
   ]
 }

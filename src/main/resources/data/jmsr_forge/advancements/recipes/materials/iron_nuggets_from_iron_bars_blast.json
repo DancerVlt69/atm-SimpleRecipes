@@ -15,11 +15,18 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:materials/iron_nuggets_from_iron_bars_blast"
+		  }
+	  }
   },
   "requirements": [
     [
-      "has_ingredients"
+      "has_ingredients",
+	    "has_the_recipe"
     ]
   ]
 }
