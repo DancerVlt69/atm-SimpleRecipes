@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
+	"hidden": true,
   "rewards": {
     "recipes": [
       "jmsr_forge:misc/spawner_with_ender_eye"
@@ -21,11 +22,18 @@
           }
         ]
       }
-    }
+    },
+	  "has_the_recipe": {
+		  "trigger": "minecraft:recipe_unlocked",
+		  "conditions": {
+			  "recipe": "jmsr_forge:misc/spawner_with_ender_eye"
+		  }
+	  }
   },
   "requirements": [
     [
-      "has_ingredients"
+      "has_ingredients",
+	    "has_the_recipe"
     ]
   ]
 }
