@@ -1,9 +1,12 @@
 ## ***All the Missing Simple Recipes ChangeLog:***
 
 ----------------------------
- v0.3.0.11.b26 | 2023/03/05
+ v0.3.0.11.b26 | 2023/03/10
 ----------------------------
+* ***fixed:***
+  * Recipe Advancements for 'Bleaching Colored Banner, Bed & Carpet with Fresh Water' (Pam's HarvestCraft 2)
 * ***added:***
+  * Recipe Soul Soil from Soul Sand (*credit DiamondKingHD*)
   * Atmospheric Support:
     * Cut Ivory/Peach/Persimmon Travertine Slabs to Blocks
     * Cut / Smooth / Red / Arid Sandstone Slabs to Blocks
@@ -14,17 +17,18 @@
     * Gloomy Tiles from Gloomy Slabs
   * Upgrade Aquatic Support:
     * Beachgrass Thatch from Slabs
-* ***fixed:***
-  * Recipe Advancements for 'Bleaching Colored Banner, Bed & Carpet with Fresh Water' (Pam's HarvestCraft 2)
-* ***updates:***
-  * reactivate hidden Recipes
+* ***updated:***
+  * again a lot of Recipes, Advancements & Tags
+  * RECIPE List *[RECIPES.md](RECIPES.md)*
+  * re-activated hidden Recipes
   * Versioning
 * ***removed:***
+  * Melon Slice from Melon - because the Recipe 'consume' the used Tool
   * min/max count in the advancement
 * ***misc:***
   * preparing for automated publishing
 
-This Version of the Mod is successfully testet with *[**Forge 31.2.57 | 30.0.51**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.15.2.html)*
+This Version of the Mod is successfully testet with *[**Forge ~~31.2.57~~ | 30.0.51**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.15.2.html)*
 
 The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVlt69/atm-SimpleRecipes/blob/1.15.x/CHANGELOG.md)*
 
@@ -36,10 +40,6 @@ The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVl
   * **new Versioning**:
     * details in the *[**Mod-Description**](https://www.curseforge.com/minecraft/mc-mods/atm-simple-recipes-just-more-simple-recipes)* or
       in the complete Changelog on *[**GitHub**](https://github.com/DancerVlt69/AllTheMissingRecipes/blob/1.15.2/CHANGELOG.md)*
-  * **Savage and Ravage Support**:
-    * Blast Proof, Gloomy Titles
-  * **Upgrade Aquatic Support**:
-    * Tooth Bricks / Tiles - Slabs to Blocks
 * ***updated:***
   * a lot of Recipes, Advancements & Tags
 * ***removed:***
