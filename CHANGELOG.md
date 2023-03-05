@@ -3,9 +3,20 @@
 --------------------------
  v0.3.0.1b52 | 2023/08/05
 --------------------------
+* ***added:***
+  * Slabs 'n Stairs Support:
+    * Planks, Slabs & Pressure Plates added to the appropriate Tags
+  * Recipe Soul Soil from Soul Sand (credit DiamondKingHD)
+  * new RECIPE List as md-File *[RECIPES.md](recipes.md)*
 * ***updated:***
-  * Tag Planks
-  * Recipe & Advancement because used Tag Planks was changed
+  * a lot of Tags
+  * Recipe & Advancement because the used Tag 'Planks' was changed
+  * changes & updates in some project building files to prepare changes
+    for an easier versioning & publishing
+* ***removed:***
+  * Melon Slice from Melon - because the Recipe 'consume' the used Tool
+  * min/max item count from the advancements  
+  * some unused code & files
 
 This Version of the Mod is successfully testet with
     *[**Forge ~~32.0.107~~ | ~~33.0.61~~ | ~~34.1.41~~ | ~~35.1.37~~ | 36.2.39**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)*
@@ -27,7 +38,7 @@ ____________________
 	  - **v0.** ***05.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.18x
 	  - **v0.** ***06.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.1/2
       - **v0.** ***07.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.3
-      - **v0.** ***08.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.4? / 1.20x
+      - **v0.** ***08.*** *xxx*.*xxx*.b*xxx* ≙  MC Version 1.19.4? (or 1.20x)
 	- 3rd digit ≙ **Minor-Version** of the Mod
 	- 4th digit ≙ **a BugFix-Version** 
     - 5th digit ≙ **Build Number** of the mod of their respective MC-Version
