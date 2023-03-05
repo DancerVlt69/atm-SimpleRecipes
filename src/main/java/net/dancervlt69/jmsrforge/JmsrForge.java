@@ -30,7 +30,6 @@ public class JmsrForge {
 		// elements.getElements().forEach(element -> element.init(event));
 
 		LOGGER.info("Common Setup finished.");
-
 	}
 
 	public void clientSetup(FMLClientSetupEvent event) {
@@ -41,5 +40,4 @@ public class JmsrForge {
 
 		LOGGER.info("Client Setup finished.");
 	}
-
 }
