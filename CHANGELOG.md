@@ -7,7 +7,7 @@
   * Slabs 'n Stairs Support:
     * Planks, Slabs & Pressure Plates added to the appropriate Tags
   * Recipe Soul Soil from Soul Sand (credit DiamondKingHD)
-  * new RECIPE List as md-File *[RECIPES.md](recipes.md)*
+  * new RECIPE List as md-File *[RECIPES.md](RECIPES.md)*
 * ***updated:***
   * a lot of Tags
   * Recipe & Advancement because the used Tag 'Planks' was changed
