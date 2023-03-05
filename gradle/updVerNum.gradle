@@ -124,7 +124,7 @@ gradle.allprojects {
         runNum = buildProps.getProperty("RNUMBER")
 
         def newProjectVersion = mjrVer + "." + subVer + "." + minVer + "." + fixVer + ".b" + buildNum
-        System.setProperty("projectVer", (newProjectVersion as String))
+        System.setProperty("projectVer", newProjectVersion)
 
         println dbgString + "Run-Count: " + runNum
         println dbgString + "Project-Version is (set to) " + newProjectVersion
