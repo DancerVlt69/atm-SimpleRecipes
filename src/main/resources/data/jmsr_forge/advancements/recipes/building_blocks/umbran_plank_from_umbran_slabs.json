@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "biomesoplenty:umbran_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "biomesoplenty:umbran_slab"
           }
         ]
       }

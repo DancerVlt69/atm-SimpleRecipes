@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "environmental:willow_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "environmental:willow_slab"
           }
         ]
       }

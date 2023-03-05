@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "environmental:wisteria_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "environmental:wisteria_slab"
           }
         ]
       }

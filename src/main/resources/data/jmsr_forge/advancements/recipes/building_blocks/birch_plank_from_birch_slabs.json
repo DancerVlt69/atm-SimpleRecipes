@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:birch_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "minecraft:birch_slab"
           }
         ]
       }

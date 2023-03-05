@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "upgrade_aquatic:river_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "upgrade_aquatic:river_slab"
           }
         ]
       }

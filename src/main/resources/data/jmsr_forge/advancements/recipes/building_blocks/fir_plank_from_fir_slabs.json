@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "biomesoplenty:fir_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "biomesoplenty:fir_slab"
           }
         ]
       }

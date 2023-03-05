@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "atmospheric:morado_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "atmospheric:morado_slab"
           }
         ]
       }

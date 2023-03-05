@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "atmospheric:aspen_planks",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "atmospheric:aspen_planks"
           }
         ]
       }

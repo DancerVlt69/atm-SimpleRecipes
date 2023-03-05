@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "bamboo_blocks:bamboo_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "bamboo_blocks:bamboo_slab"
           }
         ]
       }

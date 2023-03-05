@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "autumnity:maple_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "autumnity:maple_slab"
           }
         ]
       }

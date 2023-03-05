@@ -11,11 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:oak_slab",
-            "count": {
-              "min": 4,
-              "max": 64
-            }
+            "item": "minecraft:oak_slab"
           }
         ]
       }
