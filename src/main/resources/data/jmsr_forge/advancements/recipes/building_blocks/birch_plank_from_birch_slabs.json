@@ -15,11 +15,18 @@
           }
         ]
       }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/birch_plank_from_birch_slabs"
+      }
     }
   },
   "requirements": [
     [
-      "has_birch_slabs"
+      "has_birch_slabs",
+      "has_the_recipe"
     ]
   ]
 }
