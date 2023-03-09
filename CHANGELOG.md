@@ -4,6 +4,9 @@
  v0.3.0.1b52 | 2023/08/10
 --------------------------
 * ***added:***
+  * Atmospheric Support:
+    * Cut Ivory/Peach/Persimmon Travertine Slabs to Blocks
+    * Cut / Smooth / Red / Arid Sandstone Slabs to Blocks
   * Slabs 'n Stairs Support:
     * Planks, Slabs & Pressure Plates added to the appropriate Tags
   * Recipe Soul Soil from Soul Sand (credit DiamondKingHD)

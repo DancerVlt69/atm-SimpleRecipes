@@ -5,11 +5,15 @@
 
 * Bleached (white) Wool Blocks, Carpets, or Banners from the colored one
 
-### * Blocks from Slabs (like 'Planks from Slabs') for (grouped)
+#### * Blocks from Slabs (like 'Planks from Slabs') for (grouped)
     - ALL 'Stone'-Variants where Slabs exist in the MC-Version you play
         * Mod-Support eg. Biomes 'o Plenty and other will follow soon
 
-	- Minecraft Mud-Bricks (MC 1.19)
+	- Minecraft             ()
+    - Atmospheric           (in parts, 1.15.x and above)
+    - Biomes O' Plenty      (in parts, 1.15.x and above)
+    - Savage & Ravage       (in parts, 1.15.x and above)
+    - Upgrade Aquatic       (in parts, 1.15.x and above)
 
 * Bone Meal from a Nautilus Shell
 
@@ -19,7 +23,7 @@
 
 * Gunpowder from a TNT-Block
 
-### * Leather from Armor, Horse Armor, and Saddle - 6 recipes
+#### * Leather from Armor, Horse Armor, and Saddle - 6 recipes
 
 	- Helmet gives 1 Leather
 	- Chestplate gives 2 Leather
@@ -28,7 +32,7 @@
 	- Horse Armor gives 2 Leather
 	- Saddle gives 2 Leather
 
-#### * Planks from Stone/Wooden Slabs (more than 36 types) | supported Stone/Wood types are
+#### * Planks from Slabs (more than 36 types) | supported Stone/Wood types are
 
 	- Minecraft Vanilla         ()
    
@@ -56,7 +60,7 @@
 
 * Paper from Bamboo (Sticks)
 
-### * Stick from Arrows or Bow - 2 recipes (grouped)
+#### * Stick from Arrows or Bow - 2 recipes (grouped)
 	- Arrow gives 1 Stick
 	- Bow gives 1 Stick
 
