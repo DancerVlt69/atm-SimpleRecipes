@@ -17,10 +17,12 @@
     * Gloomy Tiles from Gloomy Slabs
   * Upgrade Aquatic Support:
     * Beachgrass Thatch from Slabs
+  * Forge & Mod Tags
 * ***updated:***
   * again a lot of Recipes, Advancements & Tags
   * RECIPE List *[RECIPES.md](RECIPES.md)*
   * re-activated hidden Recipes
+  * Forge Tags
   * Versioning
 * ***removed:***
   * Melon Slice from Melon - because the Recipe 'consume' the used Tool
