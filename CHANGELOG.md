@@ -25,7 +25,7 @@
   * Forge Tags
   * Versioning
 * ***removed:***
-  * Melon Slice from Melon - because the Recipe 'consume' the used Tool
+  * Melon Slice from Melon - because the Recipe 'consumes' the used Tool
   * min/max count in the advancement
 * ***misc:***
   * preparing for automated publishing
