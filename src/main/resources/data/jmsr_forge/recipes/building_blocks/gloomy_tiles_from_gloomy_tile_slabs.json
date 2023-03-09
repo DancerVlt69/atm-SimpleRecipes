@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "slabs2planks",
+  "pattern": [
+    "__",
+    "__"
+  ],
+  "key": {
+    "_": {
+      "item": "savageandravage:gloomy_tile_slab"
+    }
+  },
+  "result": {
+    "item": "savageandravage:gloomy_tiles",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "savageandravage"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "savageandravage:gloomy_tiles"
+    }
+  ]
+}
