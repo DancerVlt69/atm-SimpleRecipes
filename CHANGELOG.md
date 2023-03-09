@@ -17,7 +17,7 @@
   * changes & updates in some project building files to prepare changes
     for an easier versioning & publishing
 * ***removed:***
-  * Melon Slice from Melon - because the Recipe 'consume' the used Tool
+  * Melon Slice from Melon - because the Recipe 'consumes' the used Tool
   * min/max item count from the advancements  
   * some unused code & files
 
