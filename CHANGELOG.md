@@ -6,7 +6,7 @@
 * ***fixed:***
   * Recipe Advancements for 'Bleaching Colored Banner, Bed & Carpet with Fresh Water' (Pam's HarvestCraft 2)
 * ***added:***
-  * Recipe Soul Soil from Soul Sand (*credit DiamondKingHD*)
+  * Recipe Soul Soil from Soul Sand (1.16x & above | *credit DiamondKingHD*)
   * Atmospheric Support:
     * Cut Ivory/Peach/Persimmon Travertine Slabs to Blocks
     * Cut / Smooth / Red / Arid Sandstone Slabs to Blocks
