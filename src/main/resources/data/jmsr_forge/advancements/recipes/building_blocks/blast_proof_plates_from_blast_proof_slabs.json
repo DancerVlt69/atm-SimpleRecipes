@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jmsr_forge:building_blocks/blast_proof_plates_from_blast_proof_slabs"
+    ]
+  },
+  "criteria": {
+    "has_tooth_slabs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "savageandravage:blast_proof_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "jmsr_forge:building_blocks/blast_proof_plates_from_blast_proof_slabs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tooth_slabs",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "savageandravage"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "savageandravage:blast_proof_slab"
+    }
+  ]
+}
