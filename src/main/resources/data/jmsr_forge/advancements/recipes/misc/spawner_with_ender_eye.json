@@ -1,7 +1,8 @@
 {
   "parent": "minecraft:recipes/root",
 	"display": {
-		"hidden": true
+		"hidden": true,
+		"title": ""
 	},
   "rewards": {
     "recipes": [
