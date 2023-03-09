@@ -2,7 +2,11 @@
   "parent": "minecraft:recipes/root",
 	"display": {
 		"hidden": true,
-		"title": ""
+		"title": "",
+		"description": "",
+		"icon": {
+			"item": "minecraft:spawner"
+		}
 	},
   "rewards": {
     "recipes": [

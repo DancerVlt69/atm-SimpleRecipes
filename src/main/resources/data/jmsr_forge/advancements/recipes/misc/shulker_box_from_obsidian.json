@@ -2,7 +2,11 @@
 	"parent": "minecraft:recipes/root",
 	"display": {
 		"hidden": true,
-		"title": ""
+		"title": "",
+		"description": "",
+		"icon": {
+			"item": "minecraft:shulker_box"
+		}
 	},
 	"rewards": {
     "recipes": [
@@ -18,10 +22,10 @@
             "item": "minecraft:obsidian"
           },
           {
-            "item": "minecraft:purple_glazed_terracotta"
+            "item": "minecraft:crying_obsidian"
           },
           {
-            "item": "minecraft:chest"
+            "item": "minecraft:redstone_chest"
           }
         ]
       }
@@ -40,6 +44,10 @@
     ]
   ],
   "conditions": [
+	  {
+		  "type": "forge:mod_loaded",
+		  "modid": "minecraft"
+	  },
     {
       "type": "forge:item_exists",
       "item": "minecraft:crying_obsidian"
