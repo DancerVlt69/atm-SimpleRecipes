@@ -9,7 +9,7 @@
     * Cut / Smooth / Red / Arid Sandstone Slabs to Blocks
   * Slabs 'n Stairs Support:
     * Planks, Slabs & Pressure Plates added to the appropriate Tags
-  * Recipe Soul Soil from Soul Sand (credit DiamondKingHD)
+  * Recipe Soul Soil from Soul Sand (*credit DiamondKingHD*)
   * new RECIPE List as md-File *[RECIPES.md](RECIPES.md)*
 * ***updated:***
   * a lot of Tags
