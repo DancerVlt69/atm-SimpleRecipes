@@ -30,7 +30,7 @@
 * ***misc:***
   * preparing for automated publishing
 
-This Version of the Mod is successfully testet with *[**Forge ~~31.2.57~~ | 30.0.51**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.15.2.html)*
+This Version of the Mod is successfully testet with *[**Forge 31.2.57 | ~~30.0.51~~**](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.15.2.html)*
 
 The detailed ChangeLog is available on *[**GitHub**](https://github.com/DancerVlt69/atm-SimpleRecipes/blob/1.15.x/CHANGELOG.md)*
 
