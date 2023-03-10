@@ -1,7 +1,7 @@
 ## ***All the Missing Simple Recipes ChangeLog:***
 
 ----------------------------
- v0.3.0.11.b26 | 2023/03/10
+ v0.3.0.12.b28 | 2023/03/10
 ----------------------------
 * ***fixed:***
   * Recipe Advancements for 'Bleaching Colored Banner, Bed & Carpet with Fresh Water' (Pam's HarvestCraft 2)
