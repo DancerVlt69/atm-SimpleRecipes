@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Specification-Title: ATM - Simple Recipes (former JMSR)
 Specification-Vendor: DancerVLT69
-Specification-Version: 0.3.0.2.10 RC1
+Specification-Version: 1.15.x-0.3.0.11.b27 RC2
 Implementation-Title: ATM - Simple Recipes (former JMSR)
-Implementation-Version: 0.3.0.2.10 RC1
+Implementation-Version: 1.15.x-0.3.0.11.b27 RC2
 Implementation-Vendor: DancerVLT69
 Implementation-Timestamp: 2023-02-10T15:40:00+0100
 Automatic-Module-Name: jmsr_forge
